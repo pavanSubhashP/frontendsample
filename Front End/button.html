@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    body{
+
+        background-image: url("https://cdn.dribbble.com/users/2156796/screenshots/19992280/media/7d2ee3a4d15d1f335419059066067694.gif");
+        align-items: center;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 50px;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        
+    }
+
+.navbars {
+  width: 100%;
+  background-color:#f1e311;
+  overflow: auto;
+}
+
+/* Navigation links */
+.navbars a {
+  float: left;
+  padding: 12px;
+  color: rgb(41, 39, 39);
+  text-decoration: none;
+  font-size: 17px;
+  width: 23%; 
+  text-align: center; 
+}
+    
+    section{
+      width: 1000px;
+      border: 5px outset rgb(15, 14, 14);
+      align-items: center;
+      margin-left: 120px;
+    }
+    .button{
+      align-items: center;
+      margin-left: 600px;
+    }
+    .h1{
+      border: 5px outset rgb(253, 208, 5);
+      padding: 20px;
+      margin-left: auto;
+
+    }
+    .intro{
+      margin-left: 195px;
+    }
+
+
+</style>
+<body>
+    <!-- <button onclick="window.location.href = 'main.html';">HOME</button> -->
+
+    <nav class="navbars">
+        <a href="button.html" class="i1">Home </a>
+        <a href="#band" class="i2">Media</a>
+        <a href="about.html" class="i3">About us</a>
+        <a href="contact.html" class="i4">Contact</a>
+      </nav>
+    
+      <section>
+        <img class="mySlides" src="https://www.thotakaa.com/assets/img/thotaka_tlogo.png" style="width:1000px">
+        <img class="mySlides" src="https://images.jdmagicbox.com/comp/hyderabad/x2/040pxx40.xx40.150105151144.j3x2/catalogue/adventures-international-pvt-ltd-jubilee-hills-hyderabad-corporate-companies-for-it-owujgosw1f.jpg?clr="  style="width:1000px">
+        <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsxMjJ7eG2ExVTB-AvtPD3lEbqB4Zon5JZdQ&usqp=CAU" style="width:1000px">
+      </section>
+      <div class="intro"><h2>We are the experise in iot. with a skilled profissionals in experience in technology.</h1></div>
+      <div class="catagories">
+        
+      </div>
+      <div class="button"> <input type="button" value="Register" onclick="window.open('main.html')" /></div>
+   
+</body>
+<script>
+var myIndex = 0;
+    pics();
+    function pics() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(pics, 3000);
+    }</script>
+</html>
